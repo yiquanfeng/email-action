@@ -30,3 +30,4 @@ def send_email(content:str, receiver_email:str):
 
 if __name__ == "__main__":
     send_email("in github action, to greet you", "2979276763@qq.com")
+    send_email("in github action, to greet you", "3677966872@qq.com")
