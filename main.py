@@ -3,10 +3,10 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import os
 
-def send_email(content:str):
+def send_email(content:str, receiver_email:str):
     # init config
     sender_email = "yiquanfeng@qq.com"
-    receiver_email = "yiquanfeng@siliconflow.cn"
+    receiver_email = receiver_email
     password = os.getenv('EMAIL_PASSWORD')
 
     subject = "测试邮件"
@@ -29,4 +29,4 @@ def send_email(content:str):
         print(f"邮件发送失败: {e}")
 
 if __name__ == "__main__":
-    send_email("in github action, to greet you")
+    send_email("in github action, to greet you", "2979276763@qq.com")

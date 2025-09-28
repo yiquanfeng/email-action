@@ -5,7 +5,8 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '50 13 * * *'
+    - cron: '55 13 * * *'
   workflow_dispatch:
   
 jobs: 
@@ -15,7 +16,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2  # 确保代码被检出到工作流中
-        
+
       - name: send email
         env:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
