@@ -6,7 +6,7 @@ import os
 def send_email(content:str):
     # init config
     sender_email = "yiquanfeng@qq.com"
-    receiver_email = "3349287781@qq.com" ## lyq's qq
+    receiver_email = "yiquanfeng063@gmail.com" ## lyq's qq
     password = os.getenv('EMAIL_PASSWORD')
 
     subject = "测试邮件"
