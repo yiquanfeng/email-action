@@ -1,0 +1,19 @@
+name: send qq email daily
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+  
+jobs: 
+  send_email:
+    runs-on: ubuntu-lastest
+
+    steps:
+      - name: send email
+        env:
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        run: python main.py
