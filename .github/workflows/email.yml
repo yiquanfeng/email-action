@@ -10,7 +10,7 @@ on:
   
 jobs: 
   send_email:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
 
     steps:
       - name: send email
